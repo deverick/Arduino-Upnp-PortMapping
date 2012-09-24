@@ -5,11 +5,15 @@ UPNP based portmapping function for the Arduino
 
 ## Implementation
 
-#include "portMapping.h"
+		void setup() {
+			
+			/* Ethernet and Serial setup code goes here ... */
 
-Serial.println(portmap.externalIp());
+			Serial.println(portmap.externalIp());
 
-portmap.addPortMap(192.168.0.50, 80, 2900);
+			portmap.addPortMap(192.168.0.50, 80, 2900);
+
+		}
 
 ## Background
 
